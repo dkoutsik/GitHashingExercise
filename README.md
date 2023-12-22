@@ -1,23 +1,23 @@
 # GitHashingExercise
-This is the README of the fourth exercise for Operating Systems' Lab. Below you can find descriptions for most commands and files of the implementation.
+#This is the README of the fourth exercise for Operating Systems' Lab. Below you can find descriptions for most commands and files of the implementation.
 
-example_pause.c:
+#example_pause.c:
 
-./example_pause 5 . When running this command in the terminal, (after running make), this output is printed:
-The time before pause is Fri Dec 15 17:05:10 2023
+#./example_pause 5 . When running this command in the terminal, (after running make), this output is printed:
+#The time before pause is Fri Dec 15 17:05:10 2023
 
-Signal catcher called for signal 14
-The time after pause is Fri Dec 15 17:05:15 2023
+#Signal catcher called for signal 14
+#The time after pause is Fri Dec 15 17:05:15 2023
 
-As it can be seen from the output and the actual code, the process sends an alarm to itself after t seconds that we provide as an argument when calling the function. There is a signal catcher that catches this SIGALARM, and using a pause which waits for the signal to be sent, the program shows the time before and after the pause. When pause is stopped, catcher() function is activated so the output prints the message: Signal catcher called for signal 14
-14 is the code number for SIGALARM.
-////////////
+#As it can be seen from the output and the actual code, the process sends an alarm to itself after t seconds that we provide as an argument when calling the function. #There is a signal catcher that catches this SIGALARM, and using a pause which waits for the signal to be sent, the program shows the time before and after the pause. #When pause is stopped, catcher() function is activated so the output prints the message: Signal catcher called for signal 14
+#14 is the code number for SIGALARM.
+#////////////
 
-example_sleep.c
+#example_sleep.c
 
-./example_sleep When we run this command, this output appears in the terminal:
+#./example_sleep When we run this command, this output appears in the terminal:
 
-Going to sleep for a second...
+#Going to sleep for a second...
 Going to sleep for a second...
 Going to sleep for a second...
 Going to sleep for a second...
